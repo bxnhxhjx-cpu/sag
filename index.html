@@ -49,8 +49,19 @@
   }
 }
 </script>
-</head>
+  </head>
   <body class="bg-zinc-950 antialiased">
     <div id="root"></div>
+    
+    <!-- Polyfill for process.env.API_KEY to prevent crashes if key is missing locally -->
+    <script>
+      window.process = window.process || { env: { API_KEY: '' } };
+    </script>
+    
+    <!-- Babel Standalone for runtime compilation (requested) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Entry point using text/babel for Babel processing -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

@@ -4,10 +4,10 @@
 */
 
 import React, { useState } from 'react';
-import { InputSection } from './components/InputSection';
-import { SvgPreview } from './components/SvgPreview';
-import { generateSvgFromPrompt } from './services/geminiService';
-import { GeneratedSvg, GenerationStatus, ApiError } from './types';
+import { InputSection } from './components/InputSection.tsx';
+import { SvgPreview } from './components/SvgPreview.tsx';
+import { generateSvgFromPrompt } from './services/geminiService.ts';
+import { GeneratedSvg, GenerationStatus, ApiError } from './types.ts';
 import { AlertCircle } from 'lucide-react';
 
 const App: React.FC = () => {

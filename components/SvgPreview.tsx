@@ -5,7 +5,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Download, CheckCircle2, Code } from 'lucide-react';
-import { GeneratedSvg } from '../types';
+import { GeneratedSvg } from '../types.ts';
 
 interface SvgPreviewProps {
   data: GeneratedSvg | null;

@@ -5,7 +5,7 @@
 
 import React, { useState, useCallback } from 'react';
 import { Send, Loader2, Wand2 } from 'lucide-react';
-import { GenerationStatus } from '../types';
+import { GenerationStatus } from '../types.ts';
 
 interface InputSectionProps {
   onGenerate: (prompt: string) => void;
